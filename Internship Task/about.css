@@ -1,0 +1,26 @@
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    padding: 5%;
+    border-color: rgb(0, 0, 0);
+    border-width: .25em;
+    border-style: double;
+}
+
+.icon {
+    color: #4B0082;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #4B0082;
+}

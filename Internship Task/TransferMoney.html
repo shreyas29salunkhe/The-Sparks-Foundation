@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Customer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="navbar-brand" href="Home2.html">
+                <img src="logo.jpeg" width="45" height="45" class="d-inline-block align-top" alt=""> &nbsp;&nbsp;
+                <strong style="font-size: xx-large; font-family: sans-serif;">TSF Bank</strong>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home2.html"><strong style="color: azure; font-size: large;">Home</strong></a>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong style="color: azure; font-size: large;">About</strong></a>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><strong style="color: azure; font-size: large;">Contact Us </strong></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <h1 class="my-4" style="text-align: center;"><strong>Customers</strong></h1>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Sr. No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-Mail ID</th>
+                        <th scope="col">Bank Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Shreyas Salunkhe</td>
+                        <td>shreyas@gmail.com</td>
+                        <td>
+                            <p id="shreyasBankBalance">82500</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>Ankit Yadav</td>
+                        <td>ankit@gmail.com</td>
+                        <td>
+                            <p id="ankitBankBalance">75000</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>Aishwarya Phalke</td>
+                        <td>aishwarya@gmail.com</td>
+                        <td>
+                            <p id="aishwaryaBankBalance">95700</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">4</td>
+                        <td>Shreyas Mohite</td>
+                        <td>shre@gmail.com</td>
+                        <td>
+                            <p id="shreBankBalance">99080</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">5</td>
+                        <td>Raj Dhane</td>
+                        <td>raj@gmail.com</td>
+                        <td>
+                            <p id="rajBankBalance">84200</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">6</td>
+                        <td>Abhijeet Sakate</td>
+                        <td>abhi@gmail.com</td>
+                        <td>
+                            <p id="ahbiBankBalance">91000</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">7</td>
+                        <td>Vipul Pawar</td>
+                        <td>vip@gmail.com</td>
+                        <td>
+                            <p id="vipBankBalance">78000</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">8</td>
+                        <td>Abhishek Phadtare</td>
+                        <td>abhishek@gmail.com</td>
+                        <td>
+                            <p id="abhishekBankBalance">96700</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">9</td>
+                        <td>Sachin Kokare</td>
+                        <td>smk@gmail.com</td>
+                        <td>
+                            <p id="smkBankBalance">90700</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">10</td>
+                        <td>Vishwajeet Kadam</td>
+                        <td>vish@gmail.com</td>
+                        <td>
+                            <p id="vishBankBalance">95000</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div><br>
+    <div class="my-info text-center">
+        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#sendMoney"><strong style="color: black;">Send Money</strong></button>&nbsp;&nbsp;&nbsp;
+        <a class="btn btn-outline-primary" href="history.html" data-toggle="modal" data-target="#transactionHistory"><strong style="color: black;" >See All Transactions</strong></a>
+    </div>
+    <section id="main" class="coloured-section">
+
+        <!--Modal Send Money-->
+        <div class="modal fade" id="sendMoney" tableindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <input type="text" id="enterSName" class="form-control" placeholder="Sender's Username" aria-label="Sender's Username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" id="enterName" class="form-control" placeholder="Recipient's Username" aria-label="Recipient's Username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">₹</span>
+                                </div>
+                                <input type="text" id="enterAmount" class="form-control" placeholder="Enter Amount" aria-label="Amount">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Transaction History-->
+        <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <ol id="transaction-history-body">
+
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+</body>
+
+</html>
